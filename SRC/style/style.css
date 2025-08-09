@@ -9,9 +9,95 @@
 	list-style: none;
 }
 
-img {
-	
+.profile-photo {
+    width: 240px;      /* Adjust as needed */
+    height: 240px;     /* Adjust as needed */
+    object-fit: cover;
+    border-radius: 50%; /* Makes the photo circular */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    margin-bottom: 20px; /* For spacing */
+    display: block;
+    margin-left: auto;
+    margin-right: 150px;
 }
+
+.column.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 220px; /* adjust as per needs */
+}
+/* Projects section styling */
+.section-title {
+    font-size: 2.5rem; /* adjust size as needed */
+    margin-top: 100px; /* space from menu bar */
+    padding-top: 0; /* remove unwanted padding */
+    text-align: center;
+}
+
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.project-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #333;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #555;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.project-link {
+    align-self: flex-start;
+    text-decoration: none;
+    font-weight: 600;
+    color: #007acc;
+    transition: color 0.3s ease;
+}
+
+.project-link i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.project-link:hover {
+    color: #005999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item {
+        width: 90%;
+    }
+}
+
+
 
 :root {
 	/* --bg-color: radial-gradient(circle at 60% 50%, rgba(238,174,202,1) 0%, rgb(127, 172, 224) 100%); */
